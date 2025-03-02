@@ -5,6 +5,11 @@ const cors = require('cors');
 
 app.use(cors());
 
+app.get('/', (req, res) => {
+    res.json({data:"Home"});
+});
+
+
 app.get('/api/test', (req, res) => {
     res.json({data:"Hello, World!"});
 });
